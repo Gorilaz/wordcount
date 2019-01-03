@@ -1,0 +1,13 @@
+<h1>counts words</h1>
+<a href="{% url 'home' %}">Start again</a>
+<br/>
+<h1>There are {{wordlist}} words</h1>
+{{text}}
+
+<h1>Word count:</h1>
+
+{% for word , counttotal in dictwords %}
+  {{word}}, {{counttotal}}
+  <br/>
+
+{% endfor %}
